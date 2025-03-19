@@ -1,5 +1,12 @@
 import os
 import webbrowser
+import threading
+
+def say_internal(text):
+    os.system(f'./vocal/speak "{text}"')
+
+def say(text):
+    threading.Thread(target=say_internal,args=(text,)).start()
 
 def DoFunction(intent_class):
     

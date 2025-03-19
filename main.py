@@ -2,6 +2,7 @@ from AI.main import *
 from functions.functions import *
 from display.tesseract import *
 import threading
+import random
 
 print("Which interface? (cmd/voice)")
 choice = input("You: ")
@@ -18,6 +19,9 @@ if choice == "cmd":
         success = DoFunction(intent_class)
         if success is True:
             print(intent_class)
+            response = random.choice(intent_class["responses"])
+            print(response)
+            say(response)
         else:
             print(f"{intent_class}: Failed.")
 elif choice == "discord":
