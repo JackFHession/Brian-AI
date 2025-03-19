@@ -1,0 +1,287 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "open-google",
+      "patterns": [
+        "open google",
+        "go to google",
+        "open the google website",
+        "launch google"
+      ],
+      "responses": [
+        "Opening Google for you now!",
+        "Taking you to Google."
+      ]
+    },
+    {
+      "tag": "search-web",
+      "patterns": [
+        "search for {query}",
+        "look up {query}",
+        "find {query}",
+        "search on the web for {query}"
+      ],
+      "responses": [
+        "Searching the web for {query}...",
+        "Finding results for {query} now!"
+      ]
+    },
+    {
+      "tag": "open-firefox",
+      "patterns": [
+        "open firefox",
+        "launch firefox",
+        "start firefox",
+        "firefox browser"
+      ],
+      "responses": [
+        "Opening Firefox browser...",
+        "Launching Firefox now."
+      ]
+    },
+    {
+      "tag": "close-firefox",
+      "patterns": [
+        "close firefox",
+        "exit firefox",
+        "kill firefox"
+      ],
+      "responses": [
+        "Closing Firefox...",
+        "Firefox is being closed."
+      ]
+    },
+    {
+      "tag": "set-reminder",
+      "patterns": [
+        "set a reminder for {reminder}",
+        "remind me to {reminder}",
+        "give me a reminder to {reminder}"
+      ],
+      "responses": [
+        "Reminder set: {reminder}",
+        "I will remind you to {reminder}."
+      ]
+    },
+    {
+      "tag": "play-music",
+      "patterns": [
+        "play music",
+        "play {music_file}",
+        "start playing music",
+        "play a song",
+        "pause music",
+        "pause the music"
+      ],
+      "responses": [
+        "Okay!",
+        "Done!"
+      ]
+    },
+    {
+      "tag": "open-terminal",
+      "patterns": [
+        "open terminal",
+        "start terminal",
+        "launch terminal",
+        "open the command line"
+      ],
+      "responses": [
+        "Opening the terminal...",
+        "Launching the terminal now."
+      ]
+    },
+    {
+      "tag": "run-command",
+      "patterns": [
+        "run the command {command}",
+        "execute {command}",
+        "perform {command}"
+      ],
+      "responses": [
+        "Running the command: {command}",
+        "Executing: {command}."
+      ]
+    },
+    {
+      "tag": "send-email",
+      "patterns": [
+        "send an email to {recipient}",
+        "email {recipient} about {subject}",
+        "send an email regarding {subject} to {recipient}"
+      ],
+      "responses": [
+        "Email sent to {recipient}.",
+        "Your email about {subject} has been sent to {recipient}."
+      ]
+    },
+    {
+      "tag": "shutdown",
+      "patterns": [
+        "shutdown the system",
+        "turn off the computer",
+        "shut down"
+      ],
+      "responses": [
+        "Shutting down the system now.",
+        "Turning off your computer."
+      ]
+    },
+    {
+      "tag": "reboot",
+      "patterns": [
+        "reboot the system",
+        "restart the computer",
+        "reboot"
+      ],
+      "responses": [
+        "Rebooting the system now.",
+        "Restarting your computer."
+      ]
+    },
+    {
+      "tag": "increase-volume",
+      "patterns": [
+        "increase volume",
+        "turn up the volume",
+        "make it louder",
+        "volume up"
+      ],
+      "responses": [
+        "Increasing the volume.",
+        "Turning up the volume now."
+      ]
+    },
+    {
+      "tag": "decrease-volume",
+      "patterns": [
+        "decrease volume",
+        "turn down the volume",
+        "make it quieter",
+        "volume down"
+      ],
+      "responses": [
+        "Decreasing the volume.",
+        "Turning down the volume now."
+      ]
+    },
+    {
+      "tag": "mute-volume",
+      "patterns": [
+        "mute volume",
+        "turn off the sound",
+        "mute the sound",
+        "silence the volume"
+      ],
+      "responses": [
+        "Muting the volume.",
+        "Volume is now muted."
+      ]
+    },
+    {
+      "tag": "unmute-volume",
+      "patterns": [
+        "unmute volume",
+        "turn on the sound",
+        "unmute the sound",
+        "restore sound"
+      ],
+      "responses": [
+        "Unmuting the volume.",
+        "Volume is now unmuted."
+      ]
+    },
+    {
+      "tag": "open-file",
+      "patterns": [
+        "open the file {file_path}",
+        "open {file_path}",
+        "open a file"
+      ],
+      "responses": [
+        "Opening the file: {file_path}.",
+        "Your file {file_path} is opening."
+      ]
+    }
+  ]
+}
