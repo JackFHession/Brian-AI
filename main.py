@@ -24,6 +24,7 @@ if choice == "cmd":
             say(response)
         else:
             print(f"{intent_class}: Failed.")
+
 elif choice == "discord":
     pass
 elif choice == "voice":

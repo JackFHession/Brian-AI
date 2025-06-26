@@ -54,8 +54,6 @@ def DoFunction(intent_class):
         elif tag == "open-file":
             file_path = intent_class.get("file_path")
             os.system(f"xdg-open {file_path}")
-        else:
-            return False
     except Exception as e:
         print(f"Error occurred: {e}")
         return False
