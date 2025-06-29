@@ -1,6 +1,7 @@
 from AI.main import *
 from functions.functions import *
 from display.tesseract import *
+from interfaces.discord import *
 import threading
 import random
 
@@ -26,7 +27,18 @@ if choice == "cmd":
             print(f"{intent_class}: Failed.")
 
 elif choice == "discord":
-    pass
+    with open("./config/discord_key.txt", "r") as file:
+        token = file.read().strip()
+
+    discord_interface = MyDiscordBot(
+        token,
+        intent_classifier=intent_classifier,
+        do_function=DoFunction,
+        say_function=say
+    )
+    discord_interface.run()
+
+
 elif choice == "voice":
     pass
 

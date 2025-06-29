@@ -27,6 +27,8 @@ def DoFunction(intent_class):
             os.system(f'notify-send "Reminder" "{reminder}"')
         elif tag == "play-music":
             os.system(f"playerctl play-pause")
+        elif tag == "skip-music":
+            os.system(f"playerctl next")
         elif tag == "open-terminal":
             os.system("gnome-terminal &")
         elif tag == "run-command":
